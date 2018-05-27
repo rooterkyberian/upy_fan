@@ -1,0 +1,21 @@
+WIFI_SSID = 'networkname'
+WIFI_PASS = 'secretpass'
+WEBREPL_PASS = 'secretpass'
+
+
+def get_id():
+    import machine
+    import ubinascii as binascii
+    return binascii.hexlify(machine.unique_id())
+
+
+NODE_ID = get_id()
+
+BROKER = 'test.mosquitto.org'
+MQTT_FAN_SPEED = b'/fan/speed'
+MQTT_FAN_SPEED_SET = b'/fan/speed@set'
+MQTT_FAN_STATE = b'/fan/state'
+MQTT_FAN_STATE_SET = b'/fan/state@set'
+MQTT_SENSOR_TEMP = b'/sensor/temp'
+MQTT_SENSOR_HUMIDITY = b'/sensor/humidity'
+
