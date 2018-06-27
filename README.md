@@ -1,8 +1,6 @@
 # upy_fan
 micropython fan controller
 
-WORK IN PROGRESS
-
 
 # Hardware
 
